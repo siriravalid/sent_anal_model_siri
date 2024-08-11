@@ -5,7 +5,7 @@ try:
 except ImportError as e:
     st.error(f"Import error: {e}")
     st.stop()
-st.title("Sentiment Analysis")
+st.title("Sentiment Analysis(using model)-Siri")
 text = st.text_area("Enter text for sentiment analysis")
 if st.button("Analyze"):
     result = sentiment_pipeline(text)
